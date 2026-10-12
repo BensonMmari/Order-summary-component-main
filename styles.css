@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(231, 250, 250);
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20% auto;
+    width:90%;
+    max-width: 80%;
+    overflow: hidden;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+h1 {
+    padding: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.plan-details {
+    background-color: rgb(187, 223, 223);
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+}
+a:hover {
+    text-decoration: none;
+    color: blue;
+}
+#music-icon {
+    margin-left: 10px;
+}
+span {
+    font-weight: bold;
+    padding-left: 20px;
+}
+#change{
+    padding: 20px;
+}
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+
+}
+
+button {
+    padding: 10px;
+    border-radius: 16px;
+}
+.primary-button {
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: solid blue;
+}
+.primary-button:hover {
+    transform: scale(1.02);
+    transition: 0.8s;
+    background-color: hsl(224, 23%, 55%);
+    border: 2px solid hsl(224, 23%, 55%);
+}
+
+.secondary-button {
+    font-size: 16px;
+    border: solid whitesmoke;
+    background-color: whitesmoke;
+}
+.secondary-button:hover {
+    background-color: lightgray;
+    color: red;
+    border: 2px solid lightgrey;
+
+}
+
+@media screen and (min-width:700px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 4% auto;
+        max-width: 400px;
+    }
+}
+
+   
